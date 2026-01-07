@@ -5,7 +5,7 @@ import { ShieldAlertIcon } from "lucide-react"
 
 export const UnauthenticatedView = ()=>{
   return (
-    <div className="min-w-screen flex flex-1 items-center justify-center h-screen bg-background">
+    <div className="w-screen flex flex-1 items-center justify-center h-screen bg-background">
 
         <div className="w-full max-w-lg bg-muted">
 

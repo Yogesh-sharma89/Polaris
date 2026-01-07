@@ -1,6 +1,5 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import { toast } from "sonner";
 
 export const createProject = mutation({
     args:{
@@ -10,7 +9,6 @@ export const createProject = mutation({
 
         const identity = await ctx.auth.getUserIdentity();
         if(!identity){
-            toast.error('Unauthenticated');
             throw new Error('Not authenticated')
         }
         return  await ctx.db.insert('projects',{name:args.name,ownerId:identity.subject})
