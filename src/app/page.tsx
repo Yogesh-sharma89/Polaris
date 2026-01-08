@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
 
-    <div className='max-w-screen h-full flex items-center justify-center flex-col gap-4'>
+    <div className='w-screen h-full flex items-center justify-center flex-col gap-4'>
       <Button onClick={handleCreateproject}>Create Project</Button>
      
         {projects?.map((project)=>(
