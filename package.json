@@ -9,12 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@ai-sdk/deepseek": "^2.0.4",
     "@ai-sdk/google": "^3.0.5",
-    "@ai-sdk/vercel": "^2.0.4",
-    "@ai-sdk/xai": "^3.0.10",
     "@clerk/nextjs": "^6.36.5",
     "@clerk/themes": "^2.4.46",
+    "@mendable/firecrawl-js": "^4.10.0",
     "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
     "ai": "^6.0.16",
