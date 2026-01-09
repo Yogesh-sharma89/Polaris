@@ -12,7 +12,17 @@ export default defineSchema({
                 v.literal('Completed'),
                 v.literal('Failed')
             )
-        )
+        ),
+        exportStatus:v.optional(
+            v.union(
+                v.literal('Exporting'),
+                 v.literal('Completed'),
+                v.literal('Failed'),
+                v.literal('Cancelled')
+            )
+        ),
+        updateAt:(v.number()),
+        exportRepoUrl:v.optional(v.string())
     }).index("by_owner",['ownerId'])
     
 })
