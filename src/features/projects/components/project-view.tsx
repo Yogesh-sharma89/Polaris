@@ -76,8 +76,14 @@ const ProjectView = () => {
                         length:3
                     })
 
-                    createProject({name:projectName})
-                    toast.success('New project created')
+                     createProject({name:projectName})
+                     .then(()=>{
+                        toast.success('New project created')
+                     }).catch((err)=>{
+                        toast.error('Failed to create project . Try again');
+                        console.log(err);
+                     })
+                    
                  }}
                  className="flex flex-col gap-4 items-start justify-start p-4 h-full bg-background rounded-sm"
                 >

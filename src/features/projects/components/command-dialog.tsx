@@ -1,8 +1,8 @@
 
-import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem } from "@/components/ui/command";
+import { CommandDialog,CommandList, CommandEmpty, CommandGroup, CommandInput, CommandItem } from "@/components/ui/command";
 import { useRouter } from "next/navigation";
 import { useProject } from "../hooks/useProject";
-import { CommandList } from "cmdk";
+
 import { getProjectIcon } from "./projectItem";
 
 interface ProjectCommandDialogProps{
