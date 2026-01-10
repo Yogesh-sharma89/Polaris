@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import "allotment/dist/style.css";
 import { Provider } from "@/components/provider";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -8,6 +9,7 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+
 
 const plexMono = IBM_Plex_Mono({
   variable: "--font-plex-mono",
@@ -29,7 +31,7 @@ export default function RootLayout({
    
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${plexMono.variable} antialiased`}
+        className={`${inter.variable} ${plexMono.variable}  antialiased`}
       >
        <Provider>
         {children}
