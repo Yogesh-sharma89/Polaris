@@ -48,7 +48,7 @@ export const useRenameProject  = (projectId:Id<'projects'>)=>{
                 api.projects.getProjects,
                 {},
                 existingProjects.map((project)=>{
-                    return project._id===args.id ? {...project,name:args.name,updatedAt:Date.now()} : project
+                    return project._id===args.id ? {...project,name:args.name,updateAt:Date.now()} : project
                 })
             )
         }

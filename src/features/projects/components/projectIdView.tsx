@@ -10,7 +10,8 @@ const Tab = (
 )=>{
     return (
 
-        <div 
+        <button 
+        type="button"
         onClick={onClick}
         className={cn(
          'flex items-center h-full px-4 text-muted-foreground cursor-pointer border-r hover:bg-accent/30',
@@ -19,7 +20,7 @@ const Tab = (
         >
 
           <span className="text-sm">{label}</span>
-        </div>
+        </button>
     )
 }
 

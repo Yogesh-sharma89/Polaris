@@ -52,7 +52,7 @@ const Navbar = ({projectId}:{projectId:Id<'projects'>}) => {
 
     const handleKeyDown = (e:React.KeyboardEvent)=>{
 
-        if(e.key==='enter'){
+        if(e.key==='Enter'){
             handleSubmit();
         }
         else if(e.key==='Escape'){
