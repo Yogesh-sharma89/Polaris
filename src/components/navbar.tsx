@@ -47,7 +47,8 @@ const Navbar = ({projectId}:{projectId:Id<'projects'>}) => {
 
         if(!validname || validname===project.name)return ;
 
-        renameProject({id:project._id,name});
+        renameProject({id:project._id,name:validname});
+        setIsRenaming(false);
     }
 
     const handleKeyDown = (e:React.KeyboardEvent)=>{
